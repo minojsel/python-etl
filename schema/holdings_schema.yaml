@@ -1,0 +1,30 @@
+columns:
+  business_date:
+    dtype: date
+    nullable: false
+    required: true
+  portfolio_id:
+    dtype: object
+    nullable: false
+    required: true
+  security_id:
+    dtype: object
+    nullable: false
+    required: true
+  exchange:
+    dtype: object
+    nullable: true
+    required: false
+  quantity:
+    dtype: float
+    nullable: false
+    required: true
+    coerce: true
+  market_value:
+    dtype: float
+    nullable: false
+    required: true
+  currency:
+    dtype: object
+    nullable: true
+    required: false

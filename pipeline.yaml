@@ -1,0 +1,25 @@
+extract:
+  holdings:
+    data:
+      - "data/holdings_data_1.csv"
+      - "data/holdings_data_2.csv"
+  portfolio:
+    data:
+      - "data/portfolio_stats_1.csv"
+      - "data/portfolio_stats_2.csv"
+
+transform:
+  holdings:
+    schema:
+      - "schema/holdings_schema.yaml"
+  portfolio:
+    schema:
+      - "schema/portfolio_schema.yaml"
+
+load:
+  connection: "postgresql"
+  holdings: holdings_raw
+  portfolio: portfolio_raw
+  queries:
+    - "scripts/query/merge/merge_holdings.sql"
+    - "scripts/query/merge/merge_portfolio.sql"

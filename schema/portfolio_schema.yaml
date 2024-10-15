@@ -1,0 +1,33 @@
+columns:
+  business_date:
+    dtype: date
+    nullable: false
+    required: true
+  portfolio_id:
+    dtype: object
+    nullable: false
+    required: true
+  nav:
+    dtype: float
+    nullable: false
+    required: true
+  daily_pnl:
+    dtype: float
+    nullable: false
+    required: true
+  ytd_return:
+    dtype: float
+    nullable: false
+    required: true
+  sharpe_ratio:
+    dtype: float
+    nullable: true
+    required: false
+  volatility:
+    dtype: float
+    nullable: true
+    required: false
+  var_95:
+    dtype: float
+    nullable: true
+    required: false
